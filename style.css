@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background-color: #f3f4f6;
+  color: #1f2937;
+}
+
+.contenedor-movil {
+  max-width: 480px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  min-height: 100vh;
+  padding-bottom: 110px; /* Espacio para que la barra fija no tape el último producto */
+}
+
+.hero {
+  background-color: #991b1b;
+  color: #ffffff;
+  padding: 24px 20px;
+  text-align: center;
+}
+
+.menu {
+  padding: 20px;
+}
+
+h2 {
+  margin-bottom: 16px;
+  font-size: 1.3rem;
+}
+
+.platillo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+  border-bottom: 1px solid #e5e7eb;
+  gap: 12px;
+}
+
+.info h3 {
+  font-size: 1.05rem;
+  margin-bottom: 4px;
+}
+
+.info p {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin-bottom: 6px;
+}
+
+.precio {
+  font-weight: bold;
+  color: #991b1b;
+}
+
+/* Botones + y - táctiles */
+.controles {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #f3f4f6;
+  padding: 6px 10px;
+  border-radius: 8px;
+}
+
+.controles button {
+  width: 32px;
+  height: 32px;
+  border: none;
+  background-color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.controles span {
+  font-weight: bold;
+  min-width: 18px;
+  text-align: center;
+}
+
+/* Barra flotante inferior del carrito */
+.barra-carrito {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 480px;
+  background-color: #111827;
+  color: #ffffff;
+  padding: 16px 20px;
+  box-shadow: 0 -4px 10px rgba(0,0,0,0.15);
+}
+
+.oculto {
+  display: none;
+}
+
+.resumen-total {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.btn-whatsapp {
+  width: 100%;
+  background-color: #22c55e;
+  color: #ffffff;
+  border: none;
+  padding: 14px;
+  font-size: 1.05rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}

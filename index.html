@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Antojitos La Esquina - Pedido en Línea</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="contenedor-movil">
+    <header class="hero">
+      <h1>Antojitos "La Esquina"</h1>
+      <p>Selecciona tus platillos y envía tu orden directo por WhatsApp.</p>
+    </header>
+
+    <section class="menu">
+      <h2>Nuestro Menú</h2>
+
+      <!-- Producto 1 -->
+      <div class="platillo">
+        <div class="info">
+          <h3>🍔 Hamburguesa Especial</h3>
+          <p>Carne casera, doble queso, tocino y papas.</p>
+          <span class="precio">$110</span>
+        </div>
+        <div class="controles">
+          <button onclick="cambiarCantidad('Hamburguesa Especial', 110, -1)">-</button>
+          <span id="cant-Hamburguesa Especial">0</span>
+          <button onclick="cambiarCantidad('Hamburguesa Especial', 110, 1)">+</button>
+        </div>
+      </div>
+
+      <!-- Producto 2 -->
+      <div class="platillo">
+        <div class="info">
+          <h3>🌮 Orden de 3 Sincronizadas</h3>
+          <p>Tortilla de harina gigante, jamón y queso asadero.</p>
+          <span class="precio">$85</span>
+        </div>
+        <div class="controles">
+          <button onclick="cambiarCantidad('Orden de 3 Sincronizadas', 85, -1)">-</button>
+          <span id="cant-Orden de 3 Sincronizadas">0</span>
+          <button onclick="cambiarCantidad('Orden de 3 Sincronizadas', 85, 1)">+</button>
+        </div>
+      </div>
+
+      <!-- Producto 3 -->
+      <div class="platillo">
+        <div class="info">
+          <h3>🥤 Agua Fresca (1 Litro)</h3>
+          <p>Horchata o jamaica natural bien fría.</p>
+          <span class="precio">$30</span>
+        </div>
+        <div class="controles">
+          <button onclick="cambiarCantidad('Agua Fresca 1L', 30, -1)">-</button>
+          <span id="cant-Agua Fresca 1L">0</span>
+          <button onclick="cambiarCantidad('Agua Fresca 1L', 30, 1)">+</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Barra fija del carrito en la parte inferior -->
+    <div id="barra-carrito" class="barra-carrito oculto">
+      <div class="resumen-total">
+        <span>Total (<span id="total-items">0</span> productos):</span>
+        <strong id="total-dinero">$0</strong>
+      </div>
+      <button onclick="enviarWhatsApp()" class="btn-whatsapp">
+        Enviar pedido por WhatsApp
+      </button>
+    </div>
+
+  </main>
+
+  <!-- Conectamos el archivo JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
